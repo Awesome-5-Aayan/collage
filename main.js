@@ -31,7 +31,6 @@ function Speak(){
         speak_data = "take your next selfie in 10 seconds"
         var utterThis = new SpeechSynthesisUtterance(speak_data);
         synth.speak(utterThis);
-        save();
     },5000);
     setTimeout(function(){
         img_id = "selfie2"
@@ -39,13 +38,12 @@ function Speak(){
         speak_data = "take your next selfie in 15 seconds"
         var utterThis = new SpeechSynthesisUtterance(speak_data);
         synth.speak(utterThis);
-        save();
     },10000);
     setTimeout(function(){
         img_id = "selfie3"
         take_snapshot();
         
-        save();
+
     },15000);
 }
 Webcam.set({
@@ -68,11 +66,4 @@ function take_snapshot(){
        }
      
    }) 
-}
-function save(){
-    link = document.getElementById("link");
-    image = document.getElementById("selfie_image").src;
-    link.href = image;
-    ;link.click();
-
 }
