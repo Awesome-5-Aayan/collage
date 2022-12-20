@@ -59,10 +59,10 @@ function take_snapshot(){
         document.getElementById("result").innerHTML = '<img id = "selfie1" src = "'+data_uri+'"/>'; 
        }
        if (img_id=="selfie2") {
-        document.getElementById("result").innerHTML = '<img id = "selfie2" src = "'+data_uri+'"/>'; 
+        document.getElementById("result_2").innerHTML = '<img id = "selfie2" src = "'+data_uri+'"/>'; 
        }
        if (img_id=="selfie3") {
-        document.getElementById("result").innerHTML = '<img id = "selfie3" src = "'+data_uri+'"/>'; 
+        document.getElementById("result_3").innerHTML = '<img id = "selfie3" src = "'+data_uri+'"/>'; 
        }
      
    }) 
